@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript Example</title>
+  <script src="https://code.highcharts.com/gantt/highcharts-gantt.js"></script>
+
+</head>
+
+<body>
+  <!-- <h1>Hello from HTML!</h1> -->
+  <div id="container" style="width:100%; height:400px;"></div>
+  <script>
+    Highcharts.ganttChart('container', {
+      title: {
+        text: 'Simple Gantt Chart'
+      },
+
+      xAxis: [{
+        min: '2025-05-05',
+        max: '2025-08-16'
+      }],
+
+      series: [{
+        name: 'Project 1',
+        data: [{
+          name: 'Start prototype',
+          start: '2025-05-05',
+          end: '2025-05-15'
+        }, {
+          name: 'Develop',
+          start: '2025-05-10',
+          end: '2025-06-05'
+        }, {
+          name: 'Run acceptance tests',
+          start: '2025-06-06',
+          end: '2025-06-16'
+        }, {
+          name: 'Test prototype',
+          start: '2025-06-16',
+          end: '2025-06-30'
+        }, {
+          name: 'Launch product',
+          start: '2025-07-01',
+          end: '2025-07-01'
+        }]
+      }]
+    });
+  </script>
+</body>
+
+</html>
