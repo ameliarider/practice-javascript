@@ -65,3 +65,37 @@
 // });
 
 // console.log(wStrings);
+
+// Start with an array of numbers and create a new array with only the numbers less than 20.
+// For example, [2, 32, 80, 18, 12, 3] becomes [2, 18, 12, 3].
+
+// var numbers = [1,5,10,20,25];
+// var smallNumbers = [];
+// index = 0;
+
+// while (index < numbers.length) {
+//   var number = numbers[index];
+//   if (number < 20) {
+//     smallNumbers.push(number);
+//   }
+//   index += 1;
+// }
+
+// console.log(smallNumbers);
+
+// var numbers = [1,5,10,20,25,6];
+// var smallNumbers = [];
+
+// numbers.forEach(function (number) {
+//   if (number < 20) {
+//     smallNumbers.push(number);
+//   }
+// });
+// console.log(smallNumbers);
+
+var numbers = [1,5,10,25,6]
+var smallNumbers = numbers.filter(function (number) {
+  return number < 20;
+});
+
+console.log(smallNumbers);
