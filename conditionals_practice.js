@@ -115,10 +115,36 @@
 
 // Use a variable to store a number, then write a condition that prints 1776 if the number is less than 0, and prints 1979 otherwise.
 
-var num = -2;
+// var num = -2;
 
-if (num < 0) {
-  console.log(1776);
-} else {
-  console.log(1979);
-}
+// if (num < 0) {
+//   console.log(1776);
+// } else {
+//   console.log(1979);
+// }
+
+// // switch conditionals
+
+// const day = "Monday";
+
+// switch (day) {
+// case "Monday":
+//   console.log("Start of the week!");
+//   break;
+// case "Tuesday":
+//   console.log("It's Tuesday!");
+//   break;
+// default:
+//   console.log("Enjoy your day!");
+//   break;
+// }
+
+// // ternary operator
+
+// const age = 12;
+
+// const canDrive = (age >= 16) ? "Yes" : "No";
+
+// console.log(canDrive);
+
+if (0) console.log("success");

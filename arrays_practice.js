@@ -32,14 +32,24 @@
 
 // Make a hash to store 3 different states and their capitals. Then add a new state and capital and print the hash to see the result
 
-var states = [
-  {state: "California", capitol: "Sacramento"},
-  {state: "New York", capitol: "Albany"},
-  {state: "Oregon", capitol: "Salem"}
-];
+// var states = [
+//   {state: "California", capitol: "Sacramento"},
+//   {state: "New York", capitol: "Albany"},
+//   {state: "Oregon", capitol: "Salem"}
+// ];
+
+// // console.log(states);
+
+// states.push({state: "Arkansas", capitol: "Little Rock"});
 
 // console.log(states);
 
-states.push({state: "Arkansas", capitol: "Little Rock"});
+// Make an array of hashes to store the first name and last name for 3 different people. Then print out the first person's info.
 
-console.log(states);
+const people = [ 
+  {name: "Amelia", age: 27},
+  {name: "Hannah", age: 30},
+  {name: "Gwyneth", age: 24}
+];
+
+console.log(people[0].name);
