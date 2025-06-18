@@ -46,10 +46,36 @@
 
 // Make an array of hashes to store the first name and last name for 3 different people. Then print out the first person's info.
 
-const people = [ 
-  {name: "Amelia", age: 27},
-  {name: "Hannah", age: 30},
-  {name: "Gwyneth", age: 24}
-];
+// const people = [ 
+//   {name: "Amelia", age: 27},
+//   {name: "Hannah", age: 30},
+//   {name: "Gwyneth", age: 24}
+// ];
 
-console.log(people[0].name);
+// console.log(people[0].name);
+
+// Convert an array of arrays into a hash.
+// For example, [[1, 3], [8, 9], [2, 16]] becomes {1 => 3, 8 => 9, 2 => 16}.
+
+const arrays = [[1, 3], [8, 9], [2, 16]];
+let hashes = {};
+let i = 0;
+
+// arrays.forEach((array) => {
+//   let key = array[0];
+//   let value = array[1];
+//   hashes[key] = value;
+// });
+
+// console.log(arrays);
+// console.log(hashes);
+
+while (i < arrays.length) {
+  let key = arrays[i][0];
+  let value = arrays[i][1];
+  hashes[key] = value;
+  i += 1;
+}
+
+console.log(arrays);
+console.log(hashes);

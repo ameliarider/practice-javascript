@@ -168,4 +168,61 @@
 // strings.forEach(function (string) {
 //   upcasedStrings.push(string.toUpperCase());
 // });
-// console.log(upcasedStrings);
+// console.log(upcasedStrings);\
+
+// Start with an array of strings and create a new array with only the strings that start with the letter "w".
+// For example, ["winner", "winner", "chicken", "dinner"] becomes ["winner", "winner"].
+
+// const strings = ["hello","welcome","west","no"];
+// let wStrings = [];
+
+// strings.forEach(function (string) {
+//   if (string.startsWith("w")) {
+//     wStrings.push(string);
+//   }
+// })
+
+// console.log(wStrings);
+
+// // # Start with an array of hashes and create a new array with only the hashes with prices greater than 5 (from the :price key).
+// // # For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes [{name: "chair", price: 100}].
+
+// const items = [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}];
+// let newItems = [];
+
+// items.forEach(function(item) {
+//   if (item["price"] > 5) {
+//     newItems.push(item);
+//   }
+// });
+
+// console.log(newItems);
+
+// Start with an array of numbers and create a new array with each number times 3.
+
+// const numbers = [2,3,4];
+// let newNumbers = [];
+
+// numbers.forEach(function (number) {
+//   newNumbers.push(number * 3);
+// });
+
+// console.log(newNumbers);
+
+// const numbers = [2,3,4];
+// let newNumbers = [];
+// let index = 0;
+
+// while (index < numbers.length) {
+//   newNumbers.push(numbers[index] * 3);
+//   index += 1;
+// }
+
+// console.log(newNumbers);
+
+const numbers = [2,3,4];
+const newNumbers = numbers.map(function (number) {
+  return number * 3;
+});
+
+console.log(newNumbers);
